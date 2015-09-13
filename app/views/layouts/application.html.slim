@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title
+      =t('title')
+    meta charset="utf-8" /
+    meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  body
+    nav#navbar.navbar.navbar-fixed-top role="navigation"
+      .navbar-header
+        button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button"
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      .collapse.navbar-collapse
+        ul.nav.navbar-nav
+          - if current_user
+            li.user-email
+              = current_user.email
+            li
+              = link_to t('navigation.log_out'), destroy_user_session_path,  method: :delete, class: 'nav-link'
+          - else
+            li
+              = link_to t('navigation.log_in'), new_user_session_path, class: 'nav-link'
+            li
+              = link_to t('navigation.register'), new_user_registration_path, class: 'nav-link'
+        ul.nav.navbar-nav.navbar-right
+          li
+            = link_to t('navigation.home'), root_path, class: 'nav-link'
+          //li
+            = link_to t('navigation.past_events'), events_path, class: 'nav-link'
+          //li.nav-link
+            = link_to t('navigation.game_champions'), root_path, class: 'nav-link'
+    .content
+      = yield

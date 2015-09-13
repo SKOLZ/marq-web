@@ -1,0 +1,18 @@
+.register-container
+  h1.center-text
+    = t('navigation.register')
+  .separator.separator-headline
+  = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'login-form' }) do |f|
+    - resource.errors.each do |field, msg|
+      = content_tag :div, "#{ field.to_s.titleize } #{ msg }", class: 'error'
+    .input-wrapper.input-email
+      = f.email_field :email
+      = f.label :email
+    .input-wrapper.input-password
+      = f.password_field :password
+      = f.label :password
+    .input-wrapper.input-password
+      = f.password_field :password_confirmation
+      = f.label :password_confirmation
+    .actions
+      = f.submit t('navigation.register'), class: 'button btn-pink btn-big btn-blue-text'

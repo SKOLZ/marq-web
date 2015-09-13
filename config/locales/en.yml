@@ -1,0 +1,38 @@
+en:
+  exception:
+    description: Description
+    request: Request exception
+    new: New Exception
+    created: Exception requested
+    thank_you: Whackathon 2015
+    already_requested: Already requested exception
+  title: 'Stormtek'
+  games:
+    title: 'Games'
+  tournaments:
+    title: 'Tournaments'
+    empty: 'No participants yet.'
+    participate: 'Enter the challenge'
+    stop_participating: 'Abandon the challenge'
+  join_us:
+    title: 'Join us'
+    subtitle: "Participate in Stormtek's upcoming editon and enjoy a real LAN party!"
+    participate: 'Participate'
+  participants:
+    full: Full!
+    name: Participants
+    empty: 'No participants yet'
+    participate: 'Participate'
+    stop_participating: "I'm not going"
+    quit: Quit
+    created: Participation registered
+    destroyed: Participation cancelled
+    thank_you: Thank you for registering in the 2015 Whackathon
+  navigation:
+    back: Back
+    log_out: Log out
+    log_in: 'Log in'
+    register: 'Register'
+    home: 'home'
+    past_events: 'Past events'
+    game_champions: 'Game champions'
