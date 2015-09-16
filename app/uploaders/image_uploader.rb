@@ -28,11 +28,11 @@ class ImageUploader < CarrierWave::Uploader::Base
   process resize_to_fit: [1000, 1000]
 
   version :thumb do
-    process scale: [200,200]
+    process resize_to_limit: [200,200]
   end
 
   version :list_element do
-    process scale: [600,600]
+    process resize_to_limit: [600,600]
   end
   #
   # def scale(width, height)
