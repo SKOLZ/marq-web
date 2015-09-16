@@ -64,6 +64,8 @@ gem 'rails_admin'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
+# gem 'slick_rails'
+
 group :development do
 
   # Gem to detect N+1 queries

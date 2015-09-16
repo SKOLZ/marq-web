@@ -1,2 +1,2 @@
-class ProjectController < ActionController::Base
+class ProjectController < ApplicationController
 end

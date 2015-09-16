@@ -1,9 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// @import "variables/colors";
-// @import "externals/bootstrap_and_overrides";
-// @import "commons";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+@import "variables/colors";
+@import "externals/bootstrap_and_overrides";
+@import "commons";
 
 
 
