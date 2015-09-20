@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
 
-  root to: 'webpage#projects'
+  root to: 'categories#index'
 
   get 'about_us' => 'webpage#about_us'
   get 'contact' => 'webpage#contact'

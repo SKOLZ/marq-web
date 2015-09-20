@@ -16,7 +16,7 @@ body {
   }
 
   &:active, :focus {
-    color: initial;
+    color: $black;
   }
 }
 
@@ -35,4 +35,64 @@ body {
 
 .brand-img {
   height: 80px;
+}
+
+.categories-container {
+  text-align: center;
+
+  .category {
+    max-width: 600px;
+    min-width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    border-radius: 2px;
+    border: 1px solid $red;
+    cursor: pointer;
+
+    &:hover {
+      .category-overlay {
+        background: $semi-translucent-black;
+        transition: background 0.1s;
+      }
+
+      .h1-category-title {
+        font-size: 70px;
+        transition: font-size 0.2s;
+      }
+
+    }
+
+    .category-image {
+      width: 100%;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .category-overlay {
+      background: $translucent-black;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: background 0.1s;
+    }
+
+    .h1-category-title {
+      color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      font-weight: 300;
+      transition: font-size 0.2s;
+    }
+  }
 }

@@ -16,6 +16,18 @@
   }
 }
 
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-toggle {
+  background: $black;
+
+  .icon-bar {
+    background: $white;
+  }
+}
+
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
 }
