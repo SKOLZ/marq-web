@@ -1,5 +1,5 @@
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -11,8 +11,12 @@ body {
 .nav-link {
   color: $black;
 
-  &:hover {
+  &:hover{
     color: lighten($black, 20%);
+  }
+
+  &:active, :focus {
+    color: initial;
   }
 }
 
