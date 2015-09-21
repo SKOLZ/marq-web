@@ -1,6 +1,6 @@
 .categories-container
   - @categories.each do |c|
-    .category
+    = link_to category_path(c.id), class: 'category' do
       = image_tag c.image, class: 'category-image'
       .category-overlay
       h1.h1-category-title

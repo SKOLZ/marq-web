@@ -7,12 +7,12 @@ Rails.application.routes.draw do
   get 'about_us' => 'webpage#about_us'
   get 'contact' => 'webpage#contact'
 
-  # resources :events, only: [:index, :show] do
-  #   member do
-  #     post :participate
-  #     delete :stop_participating
-  #   end
-  # end
+  resources :categories, only: [:index, :show] do
+    # member do
+    #   post :participate
+    #   delete :stop_participating
+    # end
+  end
 
   # resources :tournaments, only: [] do
   #   member do
