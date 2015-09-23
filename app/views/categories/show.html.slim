@@ -1,10 +1,12 @@
 h1
   | Recent Projects
+.horizontal-separator
 .projects-container
   - @category.projects.recent.each do |r|
     = render 'project', project: r
 h1
   | Other Projects
+.horizontal-separator
 .projects-container
   - @category.projects.old.each do |o|
     = render 'project', project: o
