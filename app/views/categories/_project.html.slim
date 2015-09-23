@@ -1,5 +1,5 @@
 .project
-  = image_tag project.images.first, class: 'project_image'
+  = image_tag project.images.first.try(:image), class: 'project_image'
   .project-description
     h1.h1-project-title
       = project.title

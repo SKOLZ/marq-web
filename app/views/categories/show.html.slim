@@ -1,11 +1,11 @@
 h1
   | Recent Projects
 .projects-container
-  - @recent_projects.each do |r|
-    = render 'project' project: r
+  - @category.projects.recent.each do |r|
+    = render 'project', project: r
 h1
   | Other Projects
 .projects-container
-  - @older_projects.each do |o|
-    = render 'project' project: o
+  - @category.projects.old.each do |o|
+    = render 'project', project: o
 
