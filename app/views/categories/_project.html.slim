@@ -1,5 +1,10 @@
 .project
   = image_tag project.images.first.try(:image), class: 'project-img'
+  .project-overlay
+    .project-overlay-content
+      = image_tag 'arrow.png'
+      h6
+        = t('project.see_detail')
   .project-description
     h1.h1-project-title
       = project.title
