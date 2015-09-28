@@ -1,10 +1,12 @@
 * {
   font-family: 'Josefin Sans', sans-serif;
+  &:focus {
+    outline: none;
+  }
 }
 
 body {
   min-height: 100%;
-  background: asset-url('bg.png');
 }
 
 h1 {
@@ -14,8 +16,13 @@ h1 {
   margin: 0;
 }
 
+p {
+  font-size: 14px;
+}
+
 .content {
   padding: 0 40px;
+  font-size: 0;
 }
 
 .horizontal-separator {
@@ -23,6 +30,14 @@ h1 {
   height: 1px;
   background-color: $translucent-red;
   margin-bottom: 20px;
+}
+
+.vertical-separator {
+  width: 2px;
+  height: 400px;
+  display: inline-block;
+  background-color: $translucent-red;
+  vertical-align: middle;
 }
 
 .nav-link {
@@ -67,7 +82,7 @@ h1 {
     display: inline-block;
     vertical-align: top;
     margin: 20px;
-    border-radius: 2px;
+    border-radius: 4px;
     border: 1px solid $red;
     cursor: pointer;
 
@@ -121,13 +136,67 @@ h1 {
 .project {
   width: 400px;
   height: 400px;
-  border-radius: 10px;
+  border-radius: 4px;
   border: 1px solid $light-gray;
   overflow: hidden;
+  box-shadow: 0 1px 1px $light-translucent-black;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .project-overlay {
+      background: $translucent-black;
+      transition: background 0.5s;
+
+      .project-overlay-content {
+        opacity: 1;
+        // transition: opacity: 0.4s;
+
+
+      }
+    }
+  }
 
   .project-img {
     width:100%;
     height: 300px;
+  }
+
+  .project-overlay {
+    position: absolute;
+    height: 300px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: background 0.5s;
+
+    .project-overlay-content {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: opacity 0.4s;
+
+      img {
+        height: 30px;
+        display: inline-block;
+      }
+
+      h6 {
+        font-size: 20px;
+        color: $red;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        line-height: 20px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-transform: uppercase;
+      }
+    }
   }
 
   .project-description {
@@ -146,4 +215,11 @@ h1 {
 
   }
 
+}
+
+.contact-col {
+  display: inline-block;
+  width: calc(50% - 1px);
+  vertical-align: middle;
+  padding: 20px 40px;
 }

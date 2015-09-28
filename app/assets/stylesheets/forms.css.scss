@@ -1,0 +1,21 @@
+.input {
+  border: none;
+  background-color: $super-light-gray;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 20px;
+  display: block;
+  width: 500px;
+  margin: 20px;
+}
+
+.form-right {
+  .input {
+    margin: 20px 0 20px auto;
+  }
+}
+
+.textarea {
+  height: 250px;
+  resize: none;
+}
