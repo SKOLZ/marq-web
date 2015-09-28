@@ -16,6 +16,18 @@ RailsAdmin.config do |config|
   config.parent_controller = "RailsAdminController"
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  # config.model ProjectImage do
+  #   edit do
+  #     field :image, :carrierwave
+  #   end
+  # end
+
+  # config.model Project do
+  #   nested do
+  #     field :project_images
+  #   end
+  # end
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
