@@ -42,10 +42,10 @@ gem 'active_model_serializers', github: 'rails-api/active_model_serializers', br
 gem 'foreman'
 
 # Active Admin
-gem 'inherited_resources'
-gem 'formtastic'
-gem 'ransack'
-gem 'polyamorous'
+# gem 'inherited_resources'
+# gem 'formtastic'
+# gem 'ransack'
+# gem 'polyamorous'
 
 # Enables Slim templates
 gem 'slim-rails'
@@ -53,18 +53,23 @@ gem 'slim-rails'
 gem 'pundit'
 
 # Exceptions Report
-gem 'airbrake'
+# gem 'airbrake'
 
-gem 'meta-tags'
+# gem 'meta-tags'
 
 # Postgres Insights
-gem 'pghero'
+# gem 'pghero'
 
 gem 'rails_admin'
 
-gem 'bootstrap-sass', '~> 3.3.5'
+# gem 'bootstrap-sass', '~> 3.3.5'
 
 gem 'slick_rails'
+
+# Asynchronous tasks
+gem 'sidekiq'
+gem 'sidekiq_mailer'
+
 
 group :development do
 

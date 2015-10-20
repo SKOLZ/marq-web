@@ -77,7 +77,7 @@ Marq::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-    mail = AppConfiguration.for :mail
+  mail = AppConfiguration.for :mail
   config.action_mailer.default_url_options = { host: mail.host, only_path: false }
   config.action_mailer.asset_host = mail.host
   # ActionMailer Config
@@ -89,7 +89,7 @@ Marq::Application.configure do
   config.action_mailer.smtp_settings = {
     openssl_verify_mode: mail.openssl_verify_mode,
     enable_starttls_auto: mail.enable_starttls_auto == 'true',
-    address: mail.address,
+    address: mail.host,
     port: mail.port.to_i,
     domain: mail.domain,
     user_name: mail.user_name,

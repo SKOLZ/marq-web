@@ -34,3 +34,5 @@ bower.json
 .powenv
 
 /public/uploads/
+.config.yml
+.mail.yml
