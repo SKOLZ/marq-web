@@ -7,12 +7,44 @@
   display: block;
   width: 500px;
   margin: 20px;
+  border: 1px solid $light-gray;
+}
+
+.marq-btn {
+  height: 60px;
+  color: $white;
+  border: none;
+  outline: none;
+  line-height: 60px;
+
+  &.btn-red {
+    background-color: $red;
+    padding: 0;
+  }
 }
 
 .form-right {
   .input {
     margin: 20px 0 20px auto;
   }
+}
+
+.contact-info {
+  background-color: $super-light-gray;
+  padding: 40px;
+  display: inline-block;
+  border-radius: 4px;
+
+  .h5-contact-title {
+    font-size: 36px;
+    font-weight: 300;
+  }
+
+  .h6-contact-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
 }
 
 .textarea {
