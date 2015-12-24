@@ -1,9 +1,10 @@
 class Project < ActiveRecord::Base
   has_many :project_images, inverse_of: :project
   belongs_to :category, inverse_of: :projects
+
   accepts_nested_attributes_for :project_images, allow_destroy: true
 
-  validates :title, :category, presence: true
+  validates :title, :category, :date, presence: true
 
   RECENT = 2
 
@@ -12,17 +13,19 @@ class Project < ActiveRecord::Base
   scope :recent, -> { where("date > ?", RECENT.years.ago) }
   scope :old, -> { where("date < ?", RECENT.years.ago) }
 
-  def images
-    project_images
-  end
-
   rails_admin do
+    # configure :project_images, :has_many_association do
+    # end
+      # show do
+      #   field :image do
+      #     visible true
+      #   end
+      # end
+    # end
     nested do
-      field :project_images do
-        visible do
-          true
-        end
-      end
+      # field :project_image do
+      #   visible true
+      # end
     end
   end
 end
