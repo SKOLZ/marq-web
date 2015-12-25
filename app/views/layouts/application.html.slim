@@ -8,7 +8,7 @@ html
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-  body
+  body data-controller="#{controller.controller_name}" data-action="#{controller.action_name}"
     nav#navbar.navbar role="navigation"
       .navbar-header
         .navbar-inner
@@ -25,10 +25,10 @@ html
             = link_to t('navigation.projects'), root_path, class: 'nav-link'
             .nav-underline
           li
-            = link_to t('navigation.about_us'), about_us_path, class: 'nav-link'
+            = link_to t('navigation.about_us'), about_us_path, class: 'nav-link', id: 'about-us-link'
             .nav-underline
           li
-            = link_to t('navigation.contact'), contact_path, class: 'nav-link'
+            = link_to t('navigation.contact'), contact_path, class: 'nav-link', id: 'contact-link'
             .nav-underline
     .content
       = yield

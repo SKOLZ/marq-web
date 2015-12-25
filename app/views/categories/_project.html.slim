@@ -1,5 +1,5 @@
 .project
-  = image_tag project.images.first.try(:image), class: 'project-img'
+  = image_tag project.project_images.first.try(:image), class: 'project-img'
   .project-overlay
     .project-overlay-content
       = image_tag 'arrow.png'

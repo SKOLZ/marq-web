@@ -1,14 +1,16 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "slick/slick";
-@import "slick-theme";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'slick/slick';
+@import 'slick-theme';
 
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600);
 
-@import "variables/colors";
-@import "externals/bootstrap_and_overrides";
-@import "commons";
-@import "forms";
+@import 'variables/colors';
+@import 'externals/bootstrap_and_overrides';
+@import 'commons';
+@import 'forms';
+
+@import 'webpage/about_us';
 
 
 

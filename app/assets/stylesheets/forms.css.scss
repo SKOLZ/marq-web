@@ -7,7 +7,6 @@
   display: block;
   width: 500px;
   margin: 20px;
-  border: 1px solid $light-gray;
 }
 
 .marq-btn {
@@ -18,14 +17,22 @@
   line-height: 60px;
 
   &.btn-red {
-    background-color: $red;
+    background: $red;
     padding: 0;
+
+    &:hover {
+      background: darken($red, 5%);
+    }
   }
 }
 
 .form-right {
   .input {
-    margin: 20px 0 20px auto;
+    margin: 0 0 20px auto;
+
+    &.marq-btn {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -34,6 +41,7 @@
   padding: 40px;
   display: inline-block;
   border-radius: 4px;
+  width: 450px;
 
   .h5-contact-title {
     font-size: 36px;

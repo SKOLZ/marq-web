@@ -14,14 +14,30 @@ h1 {
   color: $black;
   font-size: 60px;
   margin: 0;
+
+  &.page-title-h1 {
+    margin-bottom: 40px;
+  }
 }
 
 p {
   font-size: 14px;
+
+  &.info-p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.info-label {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
 }
 
 .content {
-  padding: 0 40px;
+  padding: 40px 80px;
   font-size: 0;
 }
 
@@ -221,5 +237,5 @@ p {
   display: inline-block;
   width: calc(50% - 1px);
   vertical-align: middle;
-  padding: 20px 40px;
+  padding: 0 40px;
 }

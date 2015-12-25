@@ -6,5 +6,8 @@
 #
 #= require jquery
 #= require jquery_ujs
+#= require loadjs
 #= require slick
 #= require bootstrap
+#= require webpage/about_us
+#= require webpage/contact

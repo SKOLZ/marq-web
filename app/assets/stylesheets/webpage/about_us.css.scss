@@ -1,0 +1,23 @@
+.about-content-container {
+  display: flex;
+}
+
+.about-info-container {
+  max-width: 650px;
+  margin-right: 80px;
+}
+
+.about-brands-container {
+  max-width: 600px;
+
+  .info-label {
+    margin-bottom: 10px;
+  }
+}
+
+.about-brand-image {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 45px;
+  margin: 5px;
+}
