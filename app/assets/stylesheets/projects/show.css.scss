@@ -1,0 +1,25 @@
+.project-detail-container {
+  text-align: center;
+}
+
+.project-detail-info-container,
+.project-detail-images-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.project-detail-info-container {
+  width: 40%;
+  text-align: left;
+  margin-right: 80px;
+}
+
+.project-detail-images-container {
+  width: calc(60% - 80px);
+  max-width: 800px;
+  background: $semi-translucent-black;
+
+  .slider-image {
+    max-height: 500px;
+  }
+}

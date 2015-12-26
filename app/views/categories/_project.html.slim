@@ -1,4 +1,4 @@
-.project
+= link_to(project_path(id: project.id), class: 'project') do
   = image_tag project.project_images.first.try(:image), class: 'project-img'
   .project-overlay
     .project-overlay-content
@@ -7,6 +7,6 @@
         = t('project.see_detail')
   .project-description
     h1.h1-project-title
-      = project.title
+      = truncate(project.title, length: 30, separator: ' ')
     p.p-project-description
-      = project.description
+      = truncate(project.description, length: 120, separator: ' ')

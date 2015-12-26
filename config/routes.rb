@@ -14,10 +14,5 @@ Rails.application.routes.draw do
     # end
   end
 
-  # resources :tournaments, only: [] do
-  #   member do
-  #     post :participate
-  #     delete :stop_participating
-  #   end
-  # end
+  resources :projects, only: [:show]
 end

@@ -6,11 +6,13 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600);
 
 @import 'variables/colors';
-@import 'externals/bootstrap_and_overrides';
+@import 'externals/bootstrap_overrides';
+@import 'externals/slick_overrides';
 @import 'commons';
 @import 'forms';
 
 @import 'webpage/about_us';
+@import 'projects/show';
 
 
 

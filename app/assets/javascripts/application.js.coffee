@@ -11,3 +11,4 @@
 #= require bootstrap
 #= require webpage/about_us
 #= require webpage/contact
+#= require projects/show

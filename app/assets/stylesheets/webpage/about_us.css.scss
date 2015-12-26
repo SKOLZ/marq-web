@@ -3,11 +3,13 @@
 }
 
 .about-info-container {
+  width: 50%;
   max-width: 650px;
   margin-right: 80px;
 }
 
 .about-brands-container {
+  width: calc(50% - 80px);
   max-width: 600px;
 
   .info-label {

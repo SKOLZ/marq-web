@@ -1,2 +1,11 @@
-h1
-  | holis
+.project-detail-container
+  .project-detail-info-container
+    h1
+      = @project.title
+    .horizontal-separator
+    p.info-p
+      = @project.description
+
+  #project-images.project-detail-images-container
+    = @project.project_images.each do |pi|
+      = image_tag pi.image, class: 'slider-image'
