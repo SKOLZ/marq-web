@@ -5,4 +5,5 @@ on_load = ->
   , (controller, action) ->
     $('#project-images').slick
       dots: true
+      adaptiveHeight: true
 $(document).ready on_load

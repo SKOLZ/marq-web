@@ -1,11 +1,18 @@
-h1.page-title-h1
-  | Proyectos recientes
-.projects-container
-  - @category.projects.recent.each do |r|
-    = render 'project', project: r
-h1.page-title-h1
-  | Otros Proyectos
-.projects-container
-  - @category.projects.old.each do |o|
-    = render 'project', project: o
+- if @category.projects.recent.empty? && @category.projects.old.empty?
+  .notice
+    span
+      | No hay proyectos para mostrar
+- else
+  - if !@category.projects.recent.empty?
+    h1.page-title-h1
+      | Proyectos recientes
+    .projects-container
+      - @category.projects.recent.each do |r|
+        = render 'project', project: r
+  - if !@category.projects.old.empty?
+    h1.page-title-h1
+      | Otros Proyectos
+    .projects-container
+      - @category.projects.old.each do |o|
+        = render 'project', project: o
 

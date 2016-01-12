@@ -1,11 +1,10 @@
 .project-detail-container
   .project-detail-info-container
-    h1
+    h1.project-detail-h1
       = @project.title
-    .horizontal-separator
-    p.info-p
+    p.info-p.project-detail-p
       = @project.description
-
   #project-images.project-detail-images-container
     = @project.project_images.each do |pi|
-      = image_tag pi.image, class: 'slider-image'
+      .project-detail-image-container
+        = image_tag pi.image, class: 'slider-image'
