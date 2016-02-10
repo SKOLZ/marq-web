@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :admin
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  devise_for :users
 
   root to: 'categories#index'
 
-  get 'about_us' => 'webpage#about_us'
-  get 'contact' => 'webpage#contact'
+  get 'about_us'  => 'webpage#about_us'
+  get 'contact'   => 'webpage#contact'
+  post 'contact'  => 'webpage#subscribe'
 
   resources :categories, only: [:index, :show] do
     # member do
@@ -15,4 +16,8 @@ Rails.application.routes.draw do
   end
 
   resources :projects, only: [:show]
+
+  # namespace :admin do
+  #   resources :admins
+  # end
 end

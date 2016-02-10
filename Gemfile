@@ -9,7 +9,7 @@ gem 'rails', '4.2.1'
 gem 'pg'
 
 # Use puma as the app server
-gem 'puma'
+gem 'unicorn'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.2'
