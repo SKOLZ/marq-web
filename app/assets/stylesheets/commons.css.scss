@@ -86,7 +86,9 @@ p {
 }
 
 .categories-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .category {
     max-width: 600px;
@@ -94,7 +96,7 @@ p {
     overflow: hidden;
     background-color: black;
     position: relative;
-    display: inline-block;
+    // display: inline-block;
     vertical-align: top;
     margin: 20px;
     border-radius: 4px;
@@ -248,6 +250,10 @@ p {
 @media (max-width: 1100px) {
   .content {
     padding: 40px 20px;
+  }
+
+  .categories-container {
+    flex-wrap: wrap;
   }
 }
 
