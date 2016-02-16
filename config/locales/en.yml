@@ -1,13 +1,8 @@
 en:
-  exception:
-    description: Description
-    request: Request exception
-    new: New Exception
-    created: Exception requested
-    thank_you: Whackathon 2015
-    already_requested: Already requested exception
-  title: 'Marq studio'
+  title: 'Estudio Marq Arquitectura'
   navigation:
-    projects: 'Projects'
-    about_us: 'Marq studio'
-    contact: 'Contact'
+    projects: 'Proyectos'
+    about_us: 'Estudio Marq'
+    contact: 'Contacto'
+  project:
+    see_detail: 'Ver detalle'
