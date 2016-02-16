@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+  body
+    h1 style="margin-bottom: 1%; color: #000000" Marq - Hubo una consulta en el sitio web!
+
+    h3.b style="margin-bottom: 1%; color: #000000" Nombre completo:
+    i style="margin-bottom: 1%; margin-left: 2%; color: #000000" = @params['name']
+    h3.b style="margin-bottom: 1%; color: #000000" Email:
+    i style="margin-bottom: 1%; margin-left: 2%; color: #000000" = @params['email']
+    h3.b style="margin-bottom: 1%; color: #000000" Consulta:
+    p = @params['body']

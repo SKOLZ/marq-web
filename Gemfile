@@ -9,7 +9,7 @@ gem 'rails', '4.2.1'
 gem 'pg'
 
 # Use puma as the app server
-gem 'puma'
+gem 'unicorn'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.2'
@@ -51,6 +51,8 @@ gem 'foreman'
 gem 'slim-rails'
 
 gem 'pundit'
+# gem 'devise-bootstrap-views'
+gem 'rails_admin'
 
 # Exceptions Report
 # gem 'airbrake'
@@ -59,8 +61,6 @@ gem 'pundit'
 
 # Postgres Insights
 # gem 'pghero'
-
-gem 'rails_admin'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
