@@ -53,7 +53,6 @@ gem 'slim-rails'
 gem 'pundit'
 # gem 'devise-bootstrap-views'
 gem 'rails_admin'
-gem 'rails_admin_pundit', github: 'sudosu/rails_admin_pundit'
 
 # Exceptions Report
 # gem 'airbrake'

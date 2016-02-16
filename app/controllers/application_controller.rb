@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   include Pundit
   protect_from_forgery
-  # layout :custom_layout
+  layout :custom_layout
 
   # def admin_logged_in
   #   redirect_to new_user_session_path unless user_signed_in?
