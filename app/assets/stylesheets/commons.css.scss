@@ -222,12 +222,13 @@ p {
     padding: 10px;
 
     .h1-project-title {
-      font-size: 36px;
+      font-size: 32px;
       color: $black;
     }
 
     .p-project-description {
       color: $gray;
+      line-height: 16px;
     }
 
   }
