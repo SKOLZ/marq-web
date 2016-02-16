@@ -51,6 +51,9 @@ gem 'foreman'
 gem 'slim-rails'
 
 gem 'pundit'
+# gem 'devise-bootstrap-views'
+gem 'rails_admin'
+gem 'rails_admin_pundit', github: 'sudosu/rails_admin_pundit'
 
 # Exceptions Report
 # gem 'airbrake'
@@ -59,8 +62,6 @@ gem 'pundit'
 
 # Postgres Insights
 # gem 'pghero'
-
-gem 'rails_admin'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
