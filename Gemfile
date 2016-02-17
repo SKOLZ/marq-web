@@ -30,8 +30,9 @@ gem 'loadjs'
 
 gem 'devise'
 
-gem 'carrierwave'
+gem 'carrierwave', '0.10.0'
 gem 'mini_magick'
+gem "fog"
 
 gem 'foundation-rails'
 
