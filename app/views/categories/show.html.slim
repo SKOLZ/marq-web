@@ -1,8 +1,14 @@
-- if @category.projects.recent.empty? && @category.projects.old.empty?
+- if @category.projects.in_progress.empty? && @category.projects.recent.empty? && @category.projects.old.empty?
   .notice
     span
       | No hay proyectos para mostrar
 - else
+  - if !@category.projects.in_progress.empty?
+    h1.page-title-h1
+      | Proyectos en construccion
+    .projects-container
+      - @category.projects.in_progress.each do |p|
+        = render 'project', project: p
   - if !@category.projects.recent.empty?
     h1.page-title-h1
       | Proyectos recientes

@@ -28,6 +28,13 @@ p {
     line-height: 24px;
     margin-bottom: 20px;
   }
+
+  &.bold-p {
+    font-weight: bold;
+  }
+  &.big-p {
+    font-size: 22px;
+  }
 }
 
 .info-label {
