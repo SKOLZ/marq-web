@@ -1,5 +1,5 @@
 class SubscriptionMailer < DefaultMailer
-  default to: 'gabriel.zanzotti@gmail.com'
+  default to: 'marq@multistores.com.ar'
 
   def subscribe(params)
     @params = params

@@ -10,7 +10,8 @@ class Project < ActiveRecord::Base
 
   scope :multistores, -> { where(category: Category.where(name: 'multistore')) }
   scope :kiosks, -> { where(category: Category.where(name: 'kiosk')) }
-  scope :recent, -> { where("date > ?", RECENT.years.ago) }
+  scope :in_progress, -> { where("date > ?", Date.today) }
+  scope :recent, -> { where("date > ? AND date < ?", RECENT.years.ago, Date.today) }
   scope :old, -> { where("date < ?", RECENT.years.ago) }
 
   rails_admin do
