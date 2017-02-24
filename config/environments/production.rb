@@ -89,8 +89,8 @@ Marq::Application.configure do
   config.action_mailer.smtp_settings = {
     openssl_verify_mode: mail.openssl_verify_mode,
     enable_starttls_auto: mail.enable_starttls_auto == 'true',
-    address: mail.smpt_server,
-    port: mail.smpt_port.to_i,
+    address: mail.smtp_server,
+    port: mail.smtp_port.to_i,
     domain: mail.domain,
     user_name: mail.smtp_login,
     password: mail.smtp_password,
