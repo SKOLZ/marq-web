@@ -70,6 +70,9 @@ gem 'slick_rails'
 # Asynchronous tasks
 gem 'sidekiq'
 gem 'sidekiq_mailer'
+gem 'sinatra', require: nil
+
+gem 'httparty'
 
 
 group :development do
@@ -83,20 +86,6 @@ group :development do
 
   # Lints
   gem 'rubocop'
-
-  # Capistrano
-  # Remove comments if using Capistrano
-  # gem 'capistrano', '3.2.1'
-  # gem 'capistrano-maintenance', github: 'capistrano/maintenance', require: false
-  # gem 'capistrano-rails'
-  # gem 'capistrano-rbenv', '~> 2.0'
-  # gem 'capistrano-rbenv-install', '~> 1.2.0'
-  # gem 'capistrano3-puma'
-  # gem 'capistrano-sidekiq'
-  # gem 'capistrano-rails-console'
-  # gem 'capistrano-db-tasks', require: false
-  # gem 'capistrano-faster-assets', '~> 1.0'
-  # gem 'capistrano-postgresql', '~> 4.2.0'
 end
 
 group :debugging, :development, :test do

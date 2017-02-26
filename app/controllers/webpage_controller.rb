@@ -7,7 +7,7 @@ class WebpageController < ApplicationController
   end
 
   def subscribe
-    SubscriptionMailer.subscribe(params).deliver!
+    SubscriptionMailer.perform_async(params)
     redirect_to :root
   end
 
